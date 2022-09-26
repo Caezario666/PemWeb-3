@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutor HTML Video</title>
+    </head>
+    <body>
+        <p>
+            <button type="button" onclick="playvid()">Play Video</button>
+            <button type="button" onclick="pausevid()">Pause Video</button>
+            <button type="button" onclick="duration()">Duration</button>
+            <button type="button" onclick="controlOn()">Control On</button>
+            <button type="button" onclick="controloff()">Control Off</button>
+        </p>
+        <video width="420" controls id="my Video">
+            <source src="Kelinci Obesitas.mp4" type="video/mp4">
+            <source src="Kelinci Obesitas.mp4" type="video/mp4">
+            file not support
+        </video>
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+        function playVid() {
+            vid.play();
+            vid.loop = true;
+        }
+        function pasueVid() {
+            vid.pause();
+        }
+        function duration() {
+            alert(vid.duration);
+        }
+        function controlOn(){
+            vid.controls = true;
+            vid.load();
+        }
+        function controlOff(){
+            vid.controls = false
+            vid.load();
+        }
+    </script>
+</html>
