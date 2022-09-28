@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Tutor HTML Video</title>
     </head>
@@ -11,9 +11,9 @@
             <button type="button" onclick="controlOn()">Control On</button>
             <button type="button" onclick="controloff()">Control Off</button>
         </p>
-        <video width="420" controls id="my Video">
-            <source src="Kelinci Obesitas.mp4" type="video/mp4">
-            <source src="Kelinci Obesitas.mp4" type="video/mp4">
+        <video width="420" controls id="myVideo">
+            <source src="Sanji Sadness.mp4" type="video/mp4">
+            <source src="Sanji Sadness.mp4" type="video/mp4">
             file not support
         </video>
     </body>
@@ -22,20 +22,20 @@
         function playVid() {
             vid.play();
             vid.loop = true;
-        }
+        };
         function pasueVid() {
             vid.pause();
-        }
+        };
         function duration() {
             alert(vid.duration);
-        }
+        };
         function controlOn(){
             vid.controls = true;
             vid.load();
-        }
+        };
         function controlOff(){
             vid.controls = false
             vid.load();
-        }
+        };
     </script>
 </html>
